@@ -1,30 +1,35 @@
-// TODO
-// can not pass the should_pass_tests_with_random_data
-// Max Buffer Size Reached
+// 不用打印计算的式子
+// 注意数据类型
 #include <inttypes.h>
 #include <stdio.h>
 
+uint64_t rowSumOddNumbers(uint32_t n);
+
+int main(void) {
+    printf("%zu\n", rowSumOddNumbers(570124));
+}
+
 uint64_t rowSumOddNumbers(uint32_t n) {
-    int end = (1 + n) * n / 2;
-    int start = end - n + 1;
-    int num = 1;
+    uint64_t end = (1 + (uint64_t)n) * (uint64_t)n / 2;
+    uint64_t start = end - (uint64_t)n + 1;
+    uint64_t begin = 1;
+    // printf("%zu %zu %zu\n", start, end, end - start + 1);
 
     if (start == end) {
-        return num;
+        return begin;
     }
 
-    num = num + (start - 1) * 2;
-    int begin = num;
-    int size = end - start + 1;
-    for (int i = 0; i < size; i++, num += 2) {
-        if (i == 0) {
-            printf("%d", num);
-        } else {
-            printf(" + %d", num);
-        }
-    }
-    int sum = (begin + size - 1) * size;
-    printf(" = %d\n", sum);
+    begin = begin + (start - 1) * 2;
+    // printf("%zu\n", begin);
+    uint64_t size = end - start + 1;
+    uint64_t sum = (begin + size - 1) * size;
 
     return sum;
+}
+
+// interesting things ...
+uint64_t rowSumOddNumbers(uint32_t n)
+{
+    // (n*n) is center number of each line, visible odd or invisible even
+    return (uint64_t) n * n * n;
 }
