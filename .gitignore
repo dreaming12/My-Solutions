@@ -4,3 +4,4 @@ TEST
 *.out
 *.exe
 *.txt
+*.swp
