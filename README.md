@@ -1,7 +1,5 @@
-# :deciduous_tree: Practice
+# :pencil: Practice
 
-- [HDOJ](http://acm.hdu.edu.cn/)
-- [PAT | Basic Level](https://pintia.cn/problem-sets/994805260223102976/problems/type/7)
-- [PAT Advanced Level](https://pintia.cn/problem-sets/994805342720868352/problems/type/7)
-- [leetcode](https://leetcode-cn.com/)
-- [codewars](https://www.codewars.com/)
+[HDOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) // [PAT](https://pintia.cn/problem-sets?tab=0) // [Leetcode](https://leetcode-cn.com/) // [Codewars](https://www.codewars.com/)
+
+![hello world](images/gogogo.jpg)
