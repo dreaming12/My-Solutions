@@ -161,3 +161,45 @@ def strStr(self, haystack: str, needle: str) -> int:
 
     return index
 ```
+
+#### 外观数列
+
+```python
+def countAndSay(self, n: int) -> str:
+    if n == 1:
+        return '1'
+    else:
+        tmp = self.countAndSay(n - 1)
+        
+        num = tmp[0]
+        counter = 1
+        say = ''
+        for i in range(1, len(tmp)):
+            if tmp[i] != num:
+                say += (str(counter) + num)
+                num = tmp[i]
+                counter = 1
+            else:
+                counter += 1
+        say += (str(counter) + num)
+
+        return say
+```
+
+#### 最长公共前缀
+
+```python
+def longestCommonPrefix(self, strs: List[str]) -> str:
+    if '' in strs:
+        return ''
+
+    common = strs[0]
+    for i in range(1, len(strs)):
+        for j in range(len(strs[i])):
+            if j == len(common) or strs[i][j] != common[j]:
+                common = common[:j]
+                break
+            common = common[:len(strs[i])]
+
+    return common
+```

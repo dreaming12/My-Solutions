@@ -109,3 +109,21 @@ def isPalindrome(self, head: ListNode) -> bool:
 ```
 
 求和，最后和为 0？
+
+### 环形链表
+
+```python
+def hasCycle(self, head: Optional[ListNode]) -> bool:
+    flag = True
+
+    index = 0
+    ptr = head
+    while index < 10010:
+        if ptr == None:
+            flag = False
+            break
+        ptr = ptr.next
+        index += 1
+
+    return flag
+```
