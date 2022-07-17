@@ -2,3 +2,10 @@
 
 - [数组](arrays.md)
 - [字符串](strings.md)
+- [链表](linked-list.md)
+- [树](tree.md)
+- [排序和搜索](sort_search.md)
+- [动态规划](dp.md)
+- [设计问题](design.md)
+- [数学](math.md)
+- [其他](others.md)

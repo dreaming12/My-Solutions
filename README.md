@@ -1,7 +1,9 @@
 # :pencil: Practice
 
-[HDOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) // [PAT](https://pintia.cn/problem-sets?tab=0) // [Leetcode](https://leetcode-cn.com/) // [Codewars](https://www.codewars.com/)
+[HDOJ](http://acm.hdu.edu.cn/listproblem.php?vol=1) // [PTA](https://pintia.cn/problem-sets?tab=0) // [Leetcode](https://leetcode-cn.com/) // [Codewars](https://www.codewars.com/)
 
 ![hello world](images/gogogo.jpg)
+
+## For Myself
 
 看题！多思考，少提交！
